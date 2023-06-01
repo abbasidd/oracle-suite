@@ -48,6 +48,24 @@ gofer {
     source "ETH/GSU" "origin" { origin = "gsu" }
     source "ETH/GSU" "origin" { origin = "gsu1" }
     source "ETH/GSU" "origin" { origin = "gsu2" }
+    min_sources = 3
+  }
+  price_model "BTC/GSU" "median" {
+    source "BTC/GSU" "origin" { origin = "gsu" }
+    source "BTC/GSU" "origin" { origin = "gsu1" }
+    source "BTC/GSU" "origin" { origin = "gsu2" }
+    min_sources = 3
+  }
+  price_model "WBTC/GSU" "median" {
+    source "WBTC/GSU" "origin" { origin = "gsu" }
+    source "WBTC/GSU" "origin" { origin = "gsu1" }
+    source "WBTC/GSU" "origin" { origin = "gsu2" }
+    min_sources = 1
+  }
+  price_model "USDT/GSU" "median" {
+    source "USDT/GSU" "origin" { origin = "gsu" }
+    source "USDT/GSU" "origin" { origin = "gsu1" }
+    source "USDT/GSU" "origin" { origin = "gsu2" }
     min_sources = 1
   }
 }
